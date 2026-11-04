@@ -1,7 +1,7 @@
 FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
-COPY Sprint4-java/src/main/pom.xml pom.xml
-COPY Sprint4-java/src ./src
+COPY Sprint4-java-master-att1-main/Sprint4-java/src/main/pom.xml pom.xml
+COPY Sprint4-java-master-att1-main/Sprint4-java/src ./src
 RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:17-jre
